@@ -38,7 +38,12 @@ app.controller('mainCtrl', function($scope){
     iChave = dData.getMonth() + 8;
     sChave = sChave +''+ iChave;
 
-    alert( sChave );
+    function alertDismissed() {
+    // do something
+    };
+
+    navigator.notification.alert(sChave, alertDismissed, 'Chave de Ativaçao NFe','Marvilha!');
+
      }
 
 });
